@@ -11,9 +11,18 @@ class App extends Component {
           <h1 className="App-title">Whats My Age Again?</h1>
         </header>
         <p className="App-intro">
-        <h2>enter birthdate</h2>
-        <input placeholder="Birth Date"></input>
-        <button>Submit</button>
+        <h2>enter birth Year</h2>
+        <input placeholder="Birth Year"></input>
+
+          <h2>enter birth month</h2>
+          <input placeholder="Birth Month"></input>
+
+          <h2>enter birth dat</h2>
+          <input placeholder="Birth day (numerical)"></input>
+          <br></br>
+          <button>Submit</button>
+
+
         <h3>result</h3>
         </p>
       </div>
