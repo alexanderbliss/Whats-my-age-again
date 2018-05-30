@@ -3,6 +3,23 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+
+  constructor() {
+    super();
+    this.date = {
+      title: 'Whats my age again',
+      year: 0,
+      month: 0,
+      day: 0
+    }
+
+
+    this.updateDateYear = this.updateDateYear.bind(this);
+
+
+  }
+
+
   render() {
     return (
       <div className="App">
@@ -12,13 +29,7 @@ class App extends Component {
         </header>
         <p className="App-intro">
         <h2>enter birth Year</h2>
-        <input placeholder="Birth Year"></input>
-
-          <h2>enter birth month</h2>
-          <input placeholder="Birth Month"></input>
-
-          <h2>enter birth dat</h2>
-          <input placeholder="Birth day (numerical)"></input>
+          <input type="text" placeholder="Birth Year" value={this.date.year}></input>
           <br></br>
           <button>Submit</button>
 
